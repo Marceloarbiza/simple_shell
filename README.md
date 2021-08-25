@@ -60,7 +60,7 @@ Example:
 
 
 <h1>Notes :books:</h1>
-Simple shell does not handle comments, `exit` built-in, nor the `help` buit-in command. 
+Simple shell does not handle comments, exit built-in, nor the help buit-in command. 
 <br>
 <br>
 <h1>Authors :writing_hand:</h1>
