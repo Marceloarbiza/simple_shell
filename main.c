@@ -35,6 +35,8 @@ int main(void)
 		concPath(simpD, slash);
 		simpD[qq] = doub[0];
 		executen(simpD, doub);
+
+		free(buf);
 	}
 	return (0);
 }
