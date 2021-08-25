@@ -46,7 +46,7 @@ Example:
 `$ sooooo`<br/>
 `IT DOES NOT WORK!`<br/>
 
-<h2>Features</h2>
+<h2>Features :sparkles:</h2>
 
 |   | Example |
 |------------|-----------------|
@@ -55,12 +55,13 @@ Example:
 | Handle single commands with arguments | `ls -l /root`, `/usrbin -l`    |
 | Handle errors        |    |
 | Handle `env` buit-in to print current environment |`env`  |
+| Handle the `exit` built-in that exits the shell | |
 | Handle `Ctrl + D` condition | |
 | Handle `Ctrl + C` signal | |
 
 
 <h1>Notes :books:</h1>
-Simple shell does not handle comments, exit built-in, nor the help buit-in command. 
+Simple shell does not handle comments, nor the help buit-in command.
 <br>
 <br>
 <h1>Authors :writing_hand:</h1>
