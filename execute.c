@@ -7,12 +7,23 @@
   */
 int executen(char **d, char **a)
 {
-	int i = 0, axs = 0;
+	int i = 0, axs = 0, vE = 0, x = 0;
 	pid_t pid = 0;
 	int status;
+	char **envI;
 
 	if (a[0] == NULL)
 		return (0);
+
+	vE = _strcmp(a[0], "env");
+
+	if (vE == 0)
+	{
+		envI = getEnviron();
+		for (; envI[x]; x++)
+			printf("%s\n", envI[x]);
+	}
+
 	pid = fork();
 
 	if (pid == 0)
