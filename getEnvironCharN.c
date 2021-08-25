@@ -21,6 +21,8 @@ char **getEnviron()
 	{
 		len = _strlen(environ[j]);
 		envT[j] = malloc(sizeof(char) * (len + 1));
+		if (!envT[j])
+			return (NULL);
 		_strcpy(envT[j], environ[j]);
 		len = 0;
 	}
