@@ -20,7 +20,7 @@ char **getEnviron()
 	for (; j < i; j++)
 	{
 		len = _strlen(environ[j]);
-		envT[j] = malloc(sizeof(char) * len);
+		envT[j] = malloc(sizeof(char) * (len + 1));
 		_strcpy(envT[j], environ[j]);
 		len = 0;
 	}
