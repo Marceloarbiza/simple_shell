@@ -9,7 +9,7 @@ int main(void)
 	size_t bufsize = 1024;
 	int chara;
 	char **doub, **simpD;
-	int qq = 0;
+	int qq = 0, x = 0;
 
 	while (1)
 	{
@@ -37,6 +37,12 @@ int main(void)
 		executen(simpD, doub);
 
 		free(buf);
+		free(simp);
+		free(slash);
+
+		for (; simpD[x]; x++)
+			free(simpD[x]);
+		free(simpD);
 	}
 	return (0);
 }
