@@ -11,7 +11,11 @@ char **getEnviron()
 	for (; environ[i]; i++)
 		;
 
-	envT = malloc(sizeof(char *) * i);
+	envT = malloc(sizeof(char *) * (i + 1));
+	if (!envT)
+		return (NULL);
+
+	envT[i] = '\0';
 
 	for (; j < i; j++)
 	{
