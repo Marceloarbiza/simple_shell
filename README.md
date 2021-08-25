@@ -54,12 +54,13 @@ Example:
 | Handle `PATH`        | `ls`, `pwd`    |
 | Handle single commands with arguments | `ls -l /root`, `/usrbin -l`    |
 | Handle errors        |    |
-| Handles `exit` buit-in to exit the shell | `exit` |
-| Handles `env` buit-in to print current environment |`env`  |
+| Handle `env` buit-in to print current environment |`env`  |
+| Handle `Ctrl + D` condition | |
+| Handle `Ctrl + C` signal | |
 
 
 <h1>Notes :books:</h1>
-Simple shell does not handle comments, `Ctrl + D` condition, `Ctrl + C` signal, nor the `help` buit-in command. 
+Simple shell does not handle comments, `exit` built-in, nor the `help` buit-in command. 
 <br>
 <br>
 <h1>Authors :writing_hand:</h1>
