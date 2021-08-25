@@ -1,5 +1,15 @@
-# This file lists all individuals having contributed content to the repository.
+#!/usr/bin/env bash
+set -e
 
-Alina de los Santos <2520@holbertonschool.com>
-Marcelo Arbiza <3338@holbertonschool.com>
-Agustin Bolioli <3294@holbertonschool.com>
+cd "$(dirname "$(readlink -f "$BASH_SOURCE")")/.."
+
+# see also ".mailmap" for how email addresses and names are deduplicated
+
+{
+	cat <<- 'EOH'
+		# This file lists all individuals having contributed content to the repository.
+		# For how it is generated, see `hack/generate-authors.sh`.
+	EOH
+	echo
+	git log --format='%aN <%aE>' | LC_ALL=C.UTF-8 sort -uf
+} > AUTHORS
