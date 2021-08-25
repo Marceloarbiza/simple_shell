@@ -65,4 +65,4 @@ Simple shell does not handle comments, exit built-in, nor the help buit-in comma
 <br>
 <h1>Authors :writing_hand:</h1>
 
-:princess: [Alina de los Santos](https://github.com/alina-delossantos) :princess:, :suspect: [Marcelo Arbiza](https://github.com/Aortiz91) :suspect: and :hurtrealbad: [Agustin Bolioli](https://github.com/bolioliagustin)
+:princess: [Alina de los Santos](https://github.com/alina-delossantos) :princess:, :suspect: [Marcelo Arbiza](https://github.com/Aortiz91) :suspect: and :hurtrealbad: [Agustin Bolioli](https://github.com/bolioliagustin) :hurtrealbad:
