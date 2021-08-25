@@ -7,7 +7,7 @@
   */
 int executen(char **d, char **a)
 {
-	int i = 0, axs = 0, vE = 0, x = 0;
+	int i = 0, axs = 0, vE = 0, eX = 0, x = 0;
 	pid_t pid = 0;
 	int status;
 	char **envI;
@@ -16,6 +16,7 @@ int executen(char **d, char **a)
 		return (0);
 
 	vE = _strcmp(a[0], "env");
+	eX = _strcmp(a[0], "exit");
 
 	if (vE == 0)
 	{
@@ -23,6 +24,9 @@ int executen(char **d, char **a)
 		for (; envI[x]; x++)
 			printf("%s\n", envI[x]);
 	}
+
+	if (eX == 0)
+		exit(98);
 
 	pid = fork();
 
